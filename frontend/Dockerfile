@@ -29,7 +29,7 @@ RUN rm -rf ./build/static/js/*.map
 ## RUNNER CONTAINER
 ##
 
-FROM nginx:1.27.3
+FROM nginx:1.27.5
 
 COPY ./docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY ./docker/entrypoint.sh /var/entrypoint.sh
